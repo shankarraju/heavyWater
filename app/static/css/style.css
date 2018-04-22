@@ -1,0 +1,173 @@
+    @font-face{font-family:avenir;src:url('../fonts/Avenir Medium.otf')}
+        @font-face{font-family:avenir2;src:url('../fonts/avenir2.otf')}
+        
+        .main,#div1,#div2{
+            padding:0px !important;
+        }
+        .radio1{
+        padding:0px 10px !important;
+            }
+        .font1{
+             color: white;
+            font-size: 60px;
+            font-weight: 200;
+        }
+         .font2{
+             color: white;
+            font-size: 40px;
+            font-weight: 200;
+        }
+        
+        .cent2{
+              position: absolute;
+            top:40%;
+            left: 50%;
+            transform: translate(-50%,-40%);
+        }
+        .txtArea{
+                color: white;
+    background: transparent;
+    border: 1px solid white;
+        }
+        
+        .loader {
+    border: 7px solid #f3f3f3; /* Light grey */
+    border-top: 7px solid #404040; /* Blue */
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+        #authBox,#dashBoard,#resultBox{
+            padding: 40px;
+            width:60%;
+            color:white;
+            background: rgba(0,0,0,0.5);
+            display: none;
+        }
+        
+        #load{
+            padding: 20px;
+            display: none;
+            color:white;
+            background: rgba(255,255,255,0.5);
+            
+        }
+        
+     
+        .btnew{
+        width:200px !important;
+        background: transparent !important;
+            color: white !important;
+            border: 2px solid white !important;
+            border-radius: 0px !important;
+    }
+        #div1{
+            height: 100vh;
+            background-image: url(../images/bg2.jpg);
+            padding: 0px !important;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .cent{
+           
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            
+        }
+        
+        .custom{
+            color: white;
+            width:300px;
+            background: transparent;
+            border: 2px solid white;
+        }
+       
+        
+        .inner-class{
+        height: 20vh;
+    float: left;
+    position: relative;
+    width: 45px;
+    }
+        .labelWidth{
+            width:100px !important;
+        }
+        .space{
+            margin-left:100px;
+        }
+    
+        .object {
+            background: red;
+            height:20px;
+            width:15px;
+  
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+            
+            
+}
+        
+        .object:nth-child(1){
+            background: rgba(40,40,40,0.8);
+            height:10px;
+            width:5px;
+            animation-delay: 0.3s;
+            -webkit-animation-delay:0.3s;
+  animation: MoveUpDown 2s linear infinite;
+  position: absolute;
+  left: 2px;
+  bottom: 0;
+        }
+        
+      
+        
+        
+        .object:nth-child(2){
+            background: rgba(72,72,72,0.8);
+            height:2px;
+            width:5px;
+            animation-delay: 2s;
+            -webkit-animation-delay:2s;
+  animation: MoveUpDown 3s linear infinite;
+  position: absolute;
+  left:calc(10px + 4px);
+  bottom: 0;
+        }
+          .object:nth-child(3){
+            background: rgba(96,96,96,0.9);
+            height:10px;
+            width:5px;
+            animation-delay: 0.3s;
+            -webkit-animation-delay:0.3s;
+  animation: MoveUpDown 4s linear infinite;
+  position: absolute;
+  left: calc(20px + 6px);
+  bottom: 0;
+        }
+         .object:nth-child(4){
+            background: rgba(56,56,56,0.7);
+            height:5px;
+            width:5px;
+            animation-delay: 1s;
+            -webkit-animation-delay:1s;
+  animation: MoveUpDown 1.5s linear infinite;
+  position: absolute;
+  left: calc(30px + 8px);
+  bottom: 0;
+        }
+@keyframes MoveUpDown {
+  0%, 100% {
+    height:20px;
+  }
+  50% {
+    height: 120px;
+  }

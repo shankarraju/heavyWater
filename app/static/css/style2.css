@@ -1,0 +1,64 @@
+     @font-face{font-family:avenir;src:url('../fonts/Avenir Medium.otf')}
+        @font-face{font-family:avenir2;src:url('../fonts/avenir2.otf')}
+    
+        #mynav{
+            background: linear-gradient(to right, #5779e6 14%, #ffffff 118%);
+        }
+        
+        #mynav a{
+            font-family: avenir2;
+            font-weight: 300 !important;
+            color: white;
+        }
+        #brand{
+            
+            margin-left:50px;
+            margin-right:45px;
+        }
+        .we{
+            margin-right:25px;
+        }
+        .rt-space{
+            margin-right: 150px;
+        }
+        #menu-icon{
+            color:white;
+        }
+        
+        #graph{
+            margin: 120px 60px 60px 60px;
+            border: 1px solid black;
+            height:40vh;
+        }
+        #prediction{
+            margin: 80px 60px 60px 60px;
+            border-left: 1px solid grey;
+            padding: 0px !important;
+        }
+        #heading{
+            font-family: avenir2;
+            font-size:17px;
+            background: linear-gradient(to right, #5779e6 14%, #ffffff 118%);
+            color:white;
+            width:70%;
+            margin-left:0px;
+            padding:10px 10px;
+        }
+        .font1{
+            font-size:25px;
+            padding-right: 15px;
+        }
+        
+        #prediction p{
+            font-family: avenir2;
+            margin:40px 10px 0px 20px; 
+            
+        }
+        
+        .readMore{
+            color:#5B7ADF;
+        }
+        
+.card1{
+    background: green;
+}

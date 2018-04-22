@@ -1,0 +1,111 @@
+<html>
+    
+     <head>
+    
+      
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+         <title> Heavy Water Solution</title>
+        
+             <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500" rel="stylesheet">
+            
+         <!-- Bootstrap CSS CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>  
+
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+           
+            <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+            <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">    
+         <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Our Custom CSS -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet"> 
+       
+       
+        
+    </head>
+ 
+    
+   
+     <body>
+         
+      <div class="main container-fluid"> 
+         
+         <div id="div1" class="container-fluid">
+             <div id="first" class="cent contianer-fluid">
+                <h1 class="font1">HEAVY WATER</h1>
+                <p class="text-center"> <button id="start" class="btn btn-primary btnew">CLICK HERE</button>
+            </div>
+             
+             
+         <div id="authBox" class="cotainer-fluid cent2">
+            <h2 class="font2 text-center">LOGIN</h2>
+                <br>
+                  <form id="authForm" method="post" action="/userAuth">
+                    <label class="labelWidth">User Name &nbsp;</label>
+                        <input class="custom" type="text" name="userName" required><br><br>
+                    <label class="labelWidth">Password &nbsp;</label>
+                        <input class="custom" type="password" name="passw" required>
+                    <br><br>
+                   <p class="space"> <button type="submit" class="btn btnew labelWidth">LOGIN</button></p>
+                  </form>
+         </div> 
+             
+        <div id="load" class="container-fluid cent2">
+             
+                <div class="loader"></div>
+             
+         </div>
+             
+        <div id="dashBoard" class="container-fluid cent2">
+             <h2 class="font2 text-center">DASHBOARD</h2>
+                 <p> Please select a request method:</p>
+                 <form id="searchBox">
+                    <div class="container-fluid">
+                      <div class="row">
+                          <div class="radio1">
+                            <label><input type="radio" checked="checked" value="post"name="selectOption" required>&nbsp; POST</label>
+                          </div>
+                          <div class="radio1">
+                            <label><input type="radio" value="get" name="selectOption" required>&nbsp; GET</label>
+                         </div>
+                     </div>
+                 </div>
+                     <p>Enter Input String:</p>
+                    <textarea class="txtArea" name="inp_str" row="5" cols="25" required></textarea>
+                    <br><br>
+                    <p> <button type="submit" class="btn btnew labelWidth">SUBMIT</button></p>
+                </form>
+             </div>
+             
+             
+        <div id="resultBox" class="container-fluid cent2">
+            <h2 class="font2 text-center">RESULT</h2>
+                <p> Response from server:</p>
+                <p> Prediction:</p>
+                <div id="res"> </div>
+             
+             <p> <button id="backButton" type="button" class="btn btnew labelWidth">GO BACK TO DASHBOARD</button></p>
+             
+        </div>
+                 
+         </div>
+    
+         
+      </div>
+   
+    <div id="bar"style="position: absolute; bottom: 0; overflow-x: hidden; padding-left: 4%;"></div>
+    </body>
+   
+    <script src="{{url_for('static', filename='scripts/script.js') }}"></script>
+</html>
