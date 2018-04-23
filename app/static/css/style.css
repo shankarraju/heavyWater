@@ -29,6 +29,10 @@
     background: transparent;
     border: 1px solid white;
         }
+
+#backButton{
+    width:300px !important;
+}
         
         .loader {
     border: 7px solid #f3f3f3; /* Light grey */
