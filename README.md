@@ -6,22 +6,31 @@ The data was provided by HeavyWater, and the goal is to use Machine Learning to 
 # Machine Learning Model
 <li>Since it is Document Classifer vectorizers such as CountVectorizer and HashingVectorizers were used, and ngram of n =3 was used for taking into account the order of words.</li>
 
-Tfid was tried too but had a negative effect on the accuracy so a 3-gram Count Vectorizer is used
+<li>Tfid was tried too but had a negative effect on the accuracy so a 3-gram Count Vectorizer is used</li>
 
-CLASSIFIERS:
-1) Naive Bayes Multinomial
+<h4>CLASSIFIERS:</h4>
+1) Naive Bayes Multinomial <br>
 2)Stochastic Gradient Descent Classifier
 
-SGD performed better than NB Multinomial in terms of accuracy and speed, as we had huge chunks of data. For this reason SGD is used as model in EC2.
+<li>SGD performed better than NB Multinomial in terms of accuracy and speed, as we had huge chunks of data. For this reason SGD is used as model in EC2.</li>
 
-Metrics used for measurement:
+<h6>Metrics used for measurement:</h6>
 
-Confusion Matrix
-accuracy
+<li>Confusion Matrix</li>
+<li>accuracy<li>
 
-Confidence Interval (95% likelihood)
+Details about all the model metrics and Confidence Interval (95% likelihood) found in Document Classifier-SHANKAR RAJU.ipynb
 
-#Link to the model
+
+# AWS
+
+# Tools Used
+<li>AWS EC2 Instance</li>
+<li>Flask</li>
+<li>Flask REST-ful API</li>
+<li>SHA-256 password Encryption</li>
+<li>HTML, CSS, JQuery, Bootstrap</li>
+# Link to the model
 
 http://18.188.95.69/ 
 
