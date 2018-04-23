@@ -30,11 +30,12 @@ Details about all the model metrics and Confidence Interval (95% likelihood) fou
 <li>Flask REST-ful API</li>
 <li>SHA-256 password Encryption</li>
 <li>HTML, CSS, JQuery, Bootstrap</li>
+
 # Link to the model
 
 http://18.188.95.69/ 
 
-Model hosted on AWS EC2 Instance.
+Model is successfully hosted on AWS EC2 Instance and running.
 
 Username & password - (email)
 
