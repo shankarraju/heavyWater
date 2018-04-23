@@ -32,8 +32,7 @@ Details about all the model metrics and Confidence Interval (95% likelihood) fou
 <li>HTML, CSS, JQuery, Bootstrap</li>
 
 # Link to the model
-
-http://18.188.95.69/ 
+http://18.188.167.76/
 
 Model is successfully hosted on AWS EC2 Instance and running.
 
