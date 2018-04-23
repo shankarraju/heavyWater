@@ -8,23 +8,23 @@ else:
     from io import StringIO
 
 from sklearn.model_selection import train_test_split
-from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import HashingVectorizer
 from sklearn.linear_model import SGDClassifier
 
-vectorizerbigram= CountVectorizer(decode_error='ignore',ngram_range=(3, 3))
-sgclf=SGDClassifier(loss='hinge', penalty='l2',alpha=0.001, n_iter=5, random_state=42) 
+vectorizerbigram= HashingVectorizer(decode_error='ignore',ngram_range=(3, 3))
+sgclf=SGDClassifier(loss='hinge', penalty='l2',alpha=0.0001, n_iter=5, random_state=42) 
     
 wordbigram=None
 SG=None
 Ytest=None
 def intialize():
     global SG,wordbigram,vectorizerbigram,sgclf
-    data = pd.read_csv("../app/test.csv", names=["Document","Words"])
+    data = pd.read_csv("./shuffled-full-set-hashed.csv", names=["Document","Words"])
 
     Y=data.Document
     X= data.Words
 
-    Xtrain,Xtest,Ytrain,Ytest = train_test_split(X, Y, test_size=0.1, random_state=42)
+    Xtrain,Xtest,Ytrain,Ytest = train_test_split(X, Y, test_size=0.3, random_state=42)
    
     wordbigram= vectorizerbigram.fit_transform(Xtrain.values.astype('U'))
     SG = sgclf.fit(wordbigram,Ytrain) 
