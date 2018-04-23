@@ -55,6 +55,11 @@
             display: none;
         }
         
+ @media(max-width:450px){
+        #authBox,#dashBoard,#resultBox{
+            width:100% !important;
+        }
+    }
         #load{
             padding: 20px;
             display: none;
@@ -72,12 +77,17 @@
             border-radius: 0px !important;
     }
         #div1{
+           
             height: 100vh;
             background-image: url(../images/bg2.jpg);
             padding: 0px !important;
             background-repeat: no-repeat;
             background-size: cover;
         }
+        #first{
+            text-align: center !important;
+            }
+
         .cent{
            
             position: absolute;
@@ -175,3 +185,5 @@
   50% {
     height: 120px;
   }
+    
+   
