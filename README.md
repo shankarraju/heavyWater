@@ -3,8 +3,8 @@
 This is a document classifier project for HeavyWater mini-project challenge. 
 # Introduction
 The data was provided by HeavyWater, and the goal is to use Machine Learning to classify the OCR layer data. The input csv consists of document type and OCR data which is in order.
-
-Since it is Document Classifer vectorizers such as CountVectorizer and HashingVectorizers were used, and ngram of n =3 was used for taking into account the order of words.
+# Machine Learning Model
+<li>Since it is Document Classifer vectorizers such as CountVectorizer and HashingVectorizers were used, and ngram of n =3 was used for taking into account the order of words.</li>
 
 Tfid was tried too but had a negative effect on the accuracy so a 3-gram Count Vectorizer is used
 
